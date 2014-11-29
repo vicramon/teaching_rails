@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Pain Office</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="container">
+
+			<header> 
+				<h1>Pain Management Center of Dallas, P.A. </h1>
+				<nav>
+					<%= link_to "Home", root_path %>
+					<%= link_to "About", about_path %>
+					<%= link_to "Location", location_path %>
+					<%= link_to "Insurances", insurances_path %>
+					<%= link_to "Procedures", procedures_path %>
+				</nav>
+			</header>
+
+			<%= yield %>
+		</div>
+	</body>
+</html>
